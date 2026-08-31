@@ -3,155 +3,112 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechSolutions - Inovação em Tecnologia</title>
-    <a href="style.css"></a>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google Fonts (opcional, mas dá um toque profissional) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <title>Bytewave Solutions · Home</title>
 </head>
 <body>
-    <!-- Cabeçalho / Navegação -->
+
+    <!-- ===== HEADER ===== -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <a href="#home">Tech<span>Solutions</span></a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#equipe">Equipe</a></li>
-                    <li><a href="#contato">Contato</a></li>
+        <nav>
+            <div>
+                <a href="index.html">Bytewave Solutions</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
-                <!-- Ícone do menu mobile (hambúrguer) -->
-                <div class="menu-toggle" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Seção Home (Hero) -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Transformamos ideias em <span>soluções digitais</span></h1>
-                <p>Com mais de 10 anos de experiência, ajudamos empresas a inovar com tecnologia de ponta.</p>
-                <a href="#contato" class="btn-primary">Fale conosco</a>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&auto=format&fit=crop" alt="Equipe trabalhando" />
-            </div>
-        </div>
-    </section>
+    <!-- ===== MAIN ===== -->
+    <main>
 
-    <!-- Seção Sobre -->
-    <section id="sobre" class="sobre">
-        <div class="container">
-            <h2 class="section-title">Sobre nós</h2>
-            <div class="sobre-grid">
-                <div class="sobre-texto">
-                    <p>
-                        A TechSolutions nasceu com o propósito de democratizar o acesso à tecnologia de qualidade.
-                        Oferecemos consultoria, desenvolvimento de software e infraestrutura em nuvem para negócios de todos os portes.
-                    </p>
-                    <p>
-                        Nossa missão é entregar valor real através de soluções escaláveis, seguras e alinhadas aos objetivos
-                        estratégicos dos nossos clientes.
-                    </p>
-                    <ul class="valores">
-                        <li>✔ Inovação contínua</li>
-                        <li>✔ Transparência e ética</li>
-                        <li>✔ Foco no cliente</li>
-                    </ul>
+        <!-- Seção Hero -->
+        <section>
+            <h1>Bytewave Solutions</h1>
+            <p>Tecnologia que impulsiona seu negócio</p>
+            <p>Especialistas em desenvolvimento de software, infraestrutura de rede, cibersegurança e suporte corporativo.</p>
+            <a href="contato.html">Fale com um especialista</a>
+        </section>
+
+        <!-- Carousel (estrutura semântica, sem Bootstrap) -->
+        <section>
+            <h2>Destaques</h2>
+            <div>
+                <div>
+                    <img src="https://via.placeholder.com/800x400/0b1120/38bdf8?text=Inovação+em+Software" alt="Slide 1" />
+                    <h3>Inovação em Software</h3>
+                    <p>Soluções sob medida para seu negócio.</p>
                 </div>
-                <div class="sobre-imagem">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&auto=format&fit=crop" alt="Equipe TechSolutions" />
+                <div>
+                    <img src="https://via.placeholder.com/800x400/1e293b/38bdf8?text=Infraestrutura+e+Segurança" alt="Slide 2" />
+                    <h3>Rede e Cibersegurança</h3>
+                    <p>Proteção e performance em todos os níveis.</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/800x400/0f172a/7dd3fc?text=Suporte+24%2F7" alt="Slide 3" />
+                    <h3>Suporte Corporativo</h3>
+                    <p>Equipe especializada sempre à disposição.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção Serviços -->
-    <section id="servicos" class="servicos">
-        <div class="container">
-            <h2 class="section-title">Nossos serviços</h2>
-            <div class="servicos-grid">
-                <div class="servico-card">
-                    <div class="icone">🚀</div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites institucionais, e-commerces e sistemas sob medida com as melhores tecnologias.</p>
+        <!-- Cards de serviços -->
+        <section>
+            <h2>Nossos Serviços</h2>
+            <div>
+                <article>
+                    <h3>Desenvolvimento</h3>
+                    <p>Sistemas web, mobile e APIs com arquitetura escalável.</p>
+                </article>
+                <article>
+                    <h3>Infraestrutura</h3>
+                    <p>Redes locais, nuvem, data centers e monitoramento.</p>
+                </article>
+                <article>
+                    <h3>Cibersegurança</h3>
+                    <p>Proteção de dados, testes de invasão e conformidade.</p>
+                </article>
+                <article>
+                    <h3>Suporte</h3>
+                    <p>Atendimento 24/7, help desk e gestão de ativos.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Diferenciais -->
+        <section>
+            <h2>Por que a Bytewave?</h2>
+            <div>
+                <div>
+                    <span>99,9%</span>
+                    <p>Disponibilidade</p>
                 </div>
-                <div class="servico-card">
-                    <div class="icone">📱</div>
-                    <h3>Aplicativos Mobile</h3>
-                    <p>Apps nativos e híbridos para Android e iOS, com experiência de usuário impecável.</p>
+                <div>
+                    <span>+240</span>
+                    <p>Projetos entregues</p>
                 </div>
-                <div class="servico-card">
-                    <div class="icone">☁️</div>
-                    <h3>Cloud & Infraestrutura</h3>
-                    <p>Migração, gerenciamento e otimização de serviços em nuvem (AWS, Azure, GCP).</p>
+                <div>
+                    <span>50+</span>
+                    <p>Especialistas</p>
+                </div>
+                <div>
+                    <span>4.9★</span>
+                    <p>Avaliação média</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção Equipe -->
-    <section id="equipe" class="equipe">
-        <div class="container">
-            <h2 class="section-title">Nossa equipe</h2>
-            <div class="equipe-grid">
-                <div class="membro">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="CEO" />
-                    <h4>Carlos Silva</h4>
-                    <p>CEO & Fundador</p>
-                </div>
-                <div class="membro">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="CTO" />
-                    <h4>Ana Souza</h4>
-                    <p>CTO</p>
-                </div>
-                <div class="membro">
-                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Lead Dev" />
-                    <h4>Mariana Lima</h4>
-                    <p>Lead Developer</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="contato">
-        <div class="container">
-            <h2 class="section-title">Entre em contato</h2>
-            <div class="contato-grid">
-                <form id="formContato" class="form-contato">
-                    <input type="text" placeholder="Seu nome" required />
-                    <input type="email" placeholder="Seu e-mail" required />
-                    <textarea placeholder="Sua mensagem" rows="4" required></textarea>
-                    <button type="submit" class="btn-primary">Enviar mensagem</button>
-                    <div id="mensagemFeedback" class="feedback"></div>
-                </form>
-                <div class="info-contato">
-                    <p><strong>📍 Endereço:</strong> Av. Paulista, 1000 - São Paulo, SP</p>
-                    <p><strong>📞 Telefone:</strong> (11) 99999-9999</p>
-                    <p><strong>✉️ E-mail:</strong> contato@techsolutions.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 TechSolutions - Todos os direitos reservados.</p>
-        </div>
+        <p>&copy; 2026 Bytewave Solutions · Tecnologia que transforma.</p>
+        <p>Desenvolvimento · Infraestrutura · Segurança · Suporte</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="interatividade.js"></script>
 </body>
 </html>
