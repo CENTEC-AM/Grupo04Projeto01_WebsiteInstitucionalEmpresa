@@ -1,17 +1,29 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bytewave Solutions · Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bytewave Solutions - Home</title>
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
     <!-- ===== HEADER ===== -->
     <header>
+
         <nav>
+
             <div>
+
                 <a href="index.html">Bytewave Solutions</a>
+
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
@@ -19,237 +31,460 @@
                     <li><a href="galeria.html">Galeria</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
+
             </div>
+
         </nav>
+
     </header>
 
-    <!-- ===== MAIN ===== -->
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+
     <main>
 
-        <!-- Seção Hero -->
-        <section>
+        <!-- ===== INÍCIO ===== -->
+
+        <section class="inicio">
+
             <h1>Bytewave Solutions</h1>
+
             <p>Tecnologia que impulsiona seu negócio</p>
-            <p>Especialistas em desenvolvimento de software, infraestrutura de rede, cibersegurança e suporte corporativo.</p>
-            <a href="contato.html">Fale com um especialista</a>
+
+            <p>
+                Especialistas em desenvolvimento de software,
+                infraestrutura de rede, cibersegurança e suporte corporativo.
+            </p>
+
+            <a href="contato.html">
+                Fale com um especialista
+            </a>
+
         </section>
 
-        <!-- Carousel (estrutura semântica, sem Bootstrap) -->
-        <section>
+
+        <!-- ===== DESTAQUES / CAROUSEL ===== -->
+
+        <section class="destaques">
+
             <h2>Destaques</h2>
-            <div>
-                <div>
-                    <img src="https://via.placeholder.com/800x400/0b1120/38bdf8?text=Inovação+em+Software" alt="Slide 1" />
+
+            <div class="carousel">
+
+                <div class="slide">
+
+                    <img
+                        src="https://via.placeholder.com/800x400/0b1120/38bdf8?text=Inovação+em+Software"
+                        alt="Inovação em Software">
+
                     <h3>Inovação em Software</h3>
-                    <p>Soluções sob medida para seu negócio.</p>
+
+                    <p>
+                        Soluções sob medida para seu negócio.
+                    </p>
+
                 </div>
-                <div>
-                    <img src="https://via.placeholder.com/800x400/1e293b/38bdf8?text=Infraestrutura+e+Segurança" alt="Slide 2" />
+
+
+                <div class="slide">
+
+                    <img
+                        src="https://via.placeholder.com/800x400/1e293b/38bdf8?text=Infraestrutura+e+Segurança"
+                        alt="Infraestrutura e Segurança">
+
                     <h3>Rede e Cibersegurança</h3>
-                    <p>Proteção e performance em todos os níveis.</p>
+
+                    <p>
+                        Proteção e performance em todos os níveis.
+                    </p>
+
                 </div>
-                <div>
-                    <img src="https://via.placeholder.com/800x400/0f172a/7dd3fc?text=Suporte+24%2F7" alt="Slide 3" />
+
+
+                <div class="slide">
+
+                    <img
+                        src="https://via.placeholder.com/800x400/0f172a/7dd3fc?text=Suporte+24%2F7"
+                        alt="Suporte">
+
                     <h3>Suporte Corporativo</h3>
-                    <p>Equipe especializada sempre à disposição.</p>
+
+                    <p>
+                        Equipe especializada sempre à disposição.
+                    </p>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Cards de serviços -->
-        <section>
+
+        <!-- ===== SERVIÇOS ===== -->
+
+        <section class="servicos">
+
             <h2>Nossos Serviços</h2>
-            <div>
-                <article>
+
+            <div class="cards">
+
+                <article class="card">
+
                     <h3>Desenvolvimento</h3>
-                    <p>Sistemas web, mobile e APIs com arquitetura escalável.</p>
+
+                    <p>
+                        Sistemas web, mobile e APIs com arquitetura escalável.
+                    </p>
+
                 </article>
-                <article>
+
+
+                <article class="card">
+
                     <h3>Infraestrutura</h3>
-                    <p>Redes locais, nuvem, data centers e monitoramento.</p>
+
+                    <p>
+                        Redes locais, nuvem, data centers e monitoramento.
+                    </p>
+
                 </article>
-                <article>
+
+
+                <article class="card">
+
                     <h3>Cibersegurança</h3>
-                    <p>Proteção de dados, testes de invasão e conformidade.</p>
+
+                    <p>
+                        Proteção de dados, testes de invasão e conformidade.
+                    </p>
+
                 </article>
-                <article>
+
+
+                <article class="card">
+
                     <h3>Suporte</h3>
-                    <p>Atendimento 24/7, help desk e gestão de ativos.</p>
+
+                    <p>
+                        Atendimento 24/7, help desk e gestão de ativos.
+                    </p>
+
                 </article>
+
             </div>
+
         </section>
 
-        <!-- Diferenciais -->
-        <section>
+
+        <!-- ===== COMPETÊNCIAS ===== -->
+
+        <section class="competencias">
+
             <h2>Por que a Bytewave?</h2>
-            <div>
+
+            <div class="numeros">
+
                 <div>
                     <span>99,9%</span>
                     <p>Disponibilidade</p>
                 </div>
+
                 <div>
                     <span>+240</span>
                     <p>Projetos entregues</p>
                 </div>
+
                 <div>
                     <span>50+</span>
                     <p>Especialistas</p>
                 </div>
+
                 <div>
-                    <span>4.9★</span>
+                    <span>4.9</span>
                     <p>Avaliação média</p>
                 </div>
+
             </div>
+
         </section>
 
-    </main>
 
+        <!-- ===== QUEM SOMOS ===== -->
 
+        <section class="sobre">
 
-    <html>
-<body>
+            <h2>Quem somos</h2>
 
-    <!-- ===== HEADER ===== -->
-    <header>
-        <nav>
-            <div>
-                <a href="index.html">Bytewave Solutions</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+            <p>
+                A Bytewave Solutions nasceu para entregar tecnologia
+                de ponta com foco em resultados.
+            </p>
 
-    <!-- ===== MAIN ===== -->
-    <main>
-        <section>
-            <h1>Quem somos</h1>
-            <p>A Bytewave Solutions nasceu para entregar tecnologia de ponta com foco em resultados.</p>
-            <div>
+            <div class="sobre-conteudo">
+
                 <div>
-                    <h2>Nossa história</h2>
-                    <p>Fundada em 2014, a Bytewave reúne engenheiros de software, arquitetos de rede e especialistas em segurança cibernética. Atuamos em mais de 5 países e já impactamos mais de 200 empresas com nossas soluções.</p>
-                    <p>Missão: <strong>capacitar negócios através da tecnologia confiável e inovadora.</strong></p>
+
+                    <h3>Nossa história</h3>
+
+                    <p>
+                        Fundada em 2014, a Bytewave reúne engenheiros
+                        de software, arquitetos de rede e especialistas
+                        em segurança cibernética.
+                    </p>
+
+                    <p>
+                        Missão:
+                        <strong>
+                            capacitar negócios através da tecnologia
+                            confiável e inovadora.
+                        </strong>
+                    </p>
+
                     <ul>
-                        <li>Equipe certificada (AWS, Cisco, CompTIA)</li>
+                        <li>Equipe certificada</li>
                         <li>Metodologias ágeis e DevOps</li>
-                        <li>Compromisso com a segurança e privacidade</li>
+                        <li>Compromisso com segurança e privacidade</li>
                     </ul>
+
                 </div>
+
+
                 <div>
-                    <img src="https://via.placeholder.com/600x400/0b1120/38bdf8?text=Sobre+a+Bytewave" alt="Sobre a empresa" />
+
+                    <img
+                        src="https://via.placeholder.com/600x400/0b1120/38bdf8?text=Sobre+a+Bytewave"
+                        alt="Sobre a empresa">
+
                 </div>
+
             </div>
+
         </section>
+
+
+        <!-- ===== GALERIA ===== -->
+
+        <section class="galeria">
+
+            <h2>Galeria de Projetos</h2>
+
+            <p>
+                Alguns de nossos trabalhos recentes.
+            </p>
+
+            <div class="imagens">
+
+                <figure>
+
+                    <img
+                        src="https://via.placeholder.com/400x300/0b1120/38bdf8?text=Projeto+1"
+                        alt="Projeto 1">
+
+                    <figcaption>Projeto 1</figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="https://via.placeholder.com/400x300/1e293b/38bdf8?text=Projeto+2"
+                        alt="Projeto 2">
+
+                    <figcaption>Projeto 2</figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="https://via.placeholder.com/400x300/0f172a/7dd3fc?text=Projeto+3"
+                        alt="Projeto 3">
+
+                    <figcaption>Projeto 3</figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="https://via.placeholder.com/400x300/0b1120/38bdf8?text=Projeto+4"
+                        alt="Projeto 4">
+
+                    <figcaption>Projeto 4</figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="https://via.placeholder.com/400x300/1e293b/38bdf8?text=Projeto+5"
+                        alt="Projeto 5">
+
+                    <figcaption>Projeto 5</figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="https://via.placeholder.com/400x300/0f172a/7dd3fc?text=Projeto+6"
+                        alt="Projeto 6">
+
+                    <figcaption>Projeto 6</figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== CONTATO ===== -->
+
+        <section class="contato">
+
+            <h2>Fale conosco</h2>
+
+            <p>
+                Envie uma mensagem ou visite nosso escritório.
+            </p>
+
+
+            <div class="contato-conteudo">
+
+                <!-- FORMULÁRIO -->
+
+                <div>
+
+                    <form>
+
+                        <div class="campo">
+
+                            <label for="nome">
+                                Nome completo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                placeholder="Seu nome"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="email">
+                                E-mail
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="seu@email.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="assunto">
+                                Assunto
+                            </label>
+
+                            <input
+                                type="text"
+                                id="assunto"
+                                placeholder="Assunto da mensagem">
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="mensagem">
+                                Mensagem
+                            </label>
+
+                            <textarea
+                                id="mensagem"
+                                rows="5"
+                                placeholder="Descreva sua necessidade..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button type="submit">
+                            Enviar mensagem
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- INFORMAÇÕES -->
+
+                <div class="informacoes">
+
+                    <h2>Nosso escritório</h2>
+
+                    <p>
+                        Av. Djalma Batista, 711 -
+                        Nossa Sra. das Graças,
+                        Manaus - AM
+                    </p>
+
+                    <p>
+                        Telefone:
+                        <a href="tel:+5592676768888">
+                            +55 (92) 67676-8888
+                        </a>
+                    </p>
+
+                    <p>
+                        E-mail:
+                        <a href="mailto:contato@bytewave.com">
+                            contato@bytewave.com
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-
-
-
-    <!-- ===== HEADER ===== -->
-    <header>
-        <nav>
-            <div>
-                <a href="index.html">Bytewave Solutions</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- ===== MAIN ===== -->
-    <main>
-        <section>
-            <h1>Nossos Serviços</h1>
-            <p>Soluções completas para o seu ecossistema de TI.</p>
-
-            <div>
-                <article>
-                    <h3>Desenvolvimento de Software</h3>
-                    <p>Aplicações web, mobile, APIs e sistemas legados modernizados com tecnologias como Node.js, React, Python e .NET.</p>
-                </article>
-                <article>
-                    <h3>Infraestrutura em Nuvem</h3>
-                    <p>Arquitetura AWS, Azure e Google Cloud. Orquestração com Kubernetes, Terraform e monitoramento avançado.</p>
-                </article>
-                <article>
-                    <h3>Cibersegurança</h3>
-                    <p>Pentest, SIEM, gestão de identidade, conformidade LGPD/GDPR e treinamento de conscientização.</p>
-                </article>
-                <article>
-                    <h3>Suporte Gerenciado</h3>
-                    <p>Help Desk N1/N2/N3, gestão de ativos, backup e recuperação de desastres, suporte 24/7.</p>
-                </article>
-            </div>
-        </section>
-    </main>
 
     <!-- ===== FOOTER ===== -->
+
     <footer>
-        <p>&copy; 2026 Bytewave Solutions · Tecnologia que transforma.</p>
-        <p>Desenvolvimento · Infraestrutura · Segurança · Suporte</p>
+
+        <p>
+            &copy; 2026 Bytewave Solutions -
+            Tecnologia que transforma.
+        </p>
+
+        <p>
+            Desenvolvimento -
+            Infraestrutura -
+            Segurança -
+            Suporte
+        </p>
+
     </footer>
 
-
-
-
 </body>
+
 </html>
-
-
-
-    <!-- ===== HEADER ===== -->
-    <header>
-        <nav>
-            <div>
-                <a href="index.html">Bytewave Solutions</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- ===== MAIN ===== -->
-    <main>
-        <section>
-            <h1>Quem somos</h1>
-            <p>A Bytewave Solutions nasceu para entregar tecnologia de ponta com foco em resultados.</p>
-            <div>
-                <div>
-                    <h2>Nossa história</h2>
-                    <p>Fundada em 2014, a Bytewave reúne engenheiros de software, arquitetos de rede e especialistas em segurança cibernética. Atuamos em mais de 5 países e já impactamos mais de 200 empresas com nossas soluções.</p>
-                    <p>Missão: <strong>capacitar negócios através da tecnologia confiável e inovadora.</strong></p>
-                    <ul>
-                        <li>Equipe certificada (AWS, Cisco, CompTIA)</li>
-                        <li>Metodologias ágeis e DevOps</li>
-                        <li>Compromisso com a segurança e privacidade</li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/600x400/0b1120/38bdf8?text=Sobre+a+Bytewave" alt="Sobre a empresa" />
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    
-
-
-</body>
-</html>
+```
