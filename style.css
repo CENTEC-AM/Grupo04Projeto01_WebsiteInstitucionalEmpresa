@@ -153,3 +153,73 @@ footer {
     }
 }
 
+
+/* ============================================================
+   BOTÕES FLUTUANTES (WhatsApp e Voltar ao Topo)
+   ============================================================ */
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+    z-index: 1000;
+    text-decoration: none;
+}
+.btn-whatsapp:hover {
+    background-color: #1ebe5c;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.btn-topo {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    background-color: #0b1120;
+    color: #38bdf8;
+    border: 2px solid #38bdf8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* será exibido via JS */
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    z-index: 999;
+}
+.btn-topo:hover {
+    background-color: #38bdf8;
+    color: #0b1120;
+}
+
+/* Responsividade para botões flutuantes */
+@media (max-width: 576px) {
+    .btn-whatsapp {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    .btn-topo {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+        bottom: 5rem;
+        right: 1rem;
+    }
+}
+

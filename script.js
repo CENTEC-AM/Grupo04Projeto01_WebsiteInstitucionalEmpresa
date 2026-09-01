@@ -1,16 +1,34 @@
+ implementaçãocss* ============================================================
+   SCRIPT.JS – ByteWave Solutions
+   Funcionalidades: validação de formulário, botão topo, menu mobile
+   ============================================================ */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // =========================================================
+    // 1. VALIDAÇÃO DO FORMULÁRIO
+    // =========================================================
+
 document.addEventListener('DOMContentLoaded', function () {
 
     
     // 1. VALIDAÇÃO DO FORMULÁRIO
   
+
     const form = document.getElementById('formContato');
     const feedback = document.getElementById('feedbackMsg');
 
     if (form) {
         form.addEventListener('submit', function (e) {
+
+            e.preventDefault(); // Impede o envio real
+
+            // Verifica se todos os campos obrigatórios estão preenchidos
+
             e.preventDefault(); 
 
             // Verificação se todos os campos estão obrigatorios 
+
             let isValid = true;
             const requiredFields = form.querySelectorAll('[required]');
             requiredFields.forEach(field => {
@@ -22,7 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
 
+
+            // Verifica se o email é válido (formato simples)
+
             // Verifica se o email esta válido 
+
             const email = document.getElementById('email');
             if (email && email.value) {
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -56,8 +78,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
+    // =========================================================
+    // 2. BOTÃO VOLTAR AO TOPO (mostrar/ocultar + scroll suave)
+    // =========================================================
+
     
     // 2. BOTÃO VOLTAR AO TOPO 
+
     const btnTopo = document.getElementById('btnTopo');
 
     if (btnTopo) {
@@ -77,9 +105,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
+    // =========================================================
+    // 3. FECHA O MENU MOBILE AO CLICAR EM UM LINK
+    // =========================================================
+
     
     // 3. FECHA O MENU MOBILE AO CLICAR EM UM LINK
    
+
     const navLinks = document.querySelectorAll('header nav ul li a');
     const navUl = document.querySelector('header nav ul');
 
@@ -89,10 +123,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Se estiver em modo mobile (menu aberto), fecha
                 if (window.innerWidth <= 768) {
                     navUl.style.display = 'none';
+
+                    // Pequeno delay para reabrir se clicar no toggle (mas o toggle não existe aqui)
+                    // Como não temos toggle, apenas escondemos
                 }
             });
         });
     }
+
+    // =========================================================
+    // 4. (OPCIONAL) MASCARA PARA TELEFONE (exemplo)
+    // =========================================================
+    // Se você tiver um campo de telefone, pode adicionar máscara aqui.
+    // Exemplo: document.getElementById('telefone')?.addEventListener('input', ...)
+
+
+                }
+            });
+        });
+    }
+
 
     console.log('✅ ByteWave Solutions - JavaScript carregado com sucesso!');
 });
